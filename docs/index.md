@@ -6,7 +6,7 @@ Spark의 구현 언어이자 가장 효율적으로 Spark를 다룰 수 있는 �
 
 ## Syllabus
 
-* 제 1일차: Object
+* [제 1일차: Object](/Class1.html)
   * Scala의 가장 기본 요소
 * 제 2일차: Class
   * Object를 찍어내는 붕어빵틀
