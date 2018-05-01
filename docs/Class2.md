@@ -323,7 +323,7 @@ object Stormtrooper {
 
 ```scala
 Stormtrooper.inspect(Person("Martin", "Odersky"))
-// res: String = Move along, Noel
+// res: String = Move along, Martin
 Stormtrooper.inspect(Person("Han", "Solo"))
 // res: String = Stop, rebel scum!
 ```

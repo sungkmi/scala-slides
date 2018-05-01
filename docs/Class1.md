@@ -273,7 +273,7 @@ Test4 hello "Tony"
 ### Keyword Parameters
 
 ``` scala
-Test4.hello(lastName = "Tony", firstName = "Stark")
+Test4.hello(lastName = "Stark", firstName = "Tony")
 // res: String = Hello Tony Stark
 ```
 
