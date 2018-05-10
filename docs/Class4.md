@@ -357,11 +357,11 @@ asert(matched == "foo")
 
 ```scala
 def divide(a: Int, b: Int): Maybe[Int] = b match {
-  case 0 => Empty
+  case 0 => Empty()
   case _ => Just(a/b)
 }
 assert(divide(10, 2) == Just(5))
-assert(divide(10, 0) == Empty)
+assert(divide(10, 0) == Empty())
 ```
 
 ---
@@ -379,8 +379,8 @@ def map[B](f: A => B): LinkedList[B] = ???
 다음 테스트를 통과해야 합니다.
 
 ```scala
-val l = Pair(1, Pair(2, Pair(3, End)))
-assert(l.map(_ + 1) == Pair(2, Pair(3, Pair(4, End))))
+val l = Pair(1, Pair(2, Pair(3, End())))
+assert(l.map(_ + 1) == Pair(2, Pair(3, Pair(4, End()))))
 ```
 
 ---
@@ -398,9 +398,9 @@ def fold[B](init: B)(f: (A, B) => B): B = ???
 다음 테스트를 통과해야 합니다.
 
 ```scala
-val list0 = Pair(1, Pair(2, Pair(3, Pair(4, End))))
+val list0 = Pair(1, Pair(2, Pair(3, Pair(4, End()))))
 assert(list0.fold(0)(_ + _) == 10)
-val list1 = Pair(1, Pair(2, Pair(3, Pair(4, End))))
+val list1 = Pair(1, Pair(2, Pair(3, Pair(4, End()))))
 assert(list1.fold(1)(_ * _) == 24)
 ```
 
@@ -419,12 +419,12 @@ def flatMap[B](f: A => LinkedList[B]): LinkedList[B] = ???
 다음 테스트를 통과해야 합니다.
 
 ```scala
-val list = Pair(1, Pair(2, Pair(3, Pair(4, End))))
+val list = Pair(1, Pair(2, Pair(3, Pair(4, End()))))
 val filtered = list.flatMap{
-  case n if x % 2 == 0 => End
-  case n => Pair(n, End)
+  case n if x % 2 == 0 => End()
+  case n => Pair(n, End())
 }
-assert(filtered == Pair(1, Pair(3, End)))
+assert(filtered == Pair(1, Pair(3, End())))
 ```
 ---
 
