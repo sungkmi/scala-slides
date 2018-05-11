@@ -14,7 +14,7 @@ Spark의 구현 언어이자 가장 효율적으로 Spark를 다룰 수 있는 �
   * 비슷한 속성을 지닌 Class들을 한 번에 다루기
 * [제 4일차: Generic](/Class4.html)
   * 타입을 한층 더 추상화
-* 제 5일차: Collection Library(1/2)
+* [제 5일차: Collection Library(1/2)](/Class5.html)
   * Seq, Option
 * 제 6일차: Collection Library(2/2)
   * Map, Set, Range, RDD
