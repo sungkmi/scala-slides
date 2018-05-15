@@ -207,12 +207,25 @@ val maybeValue2 = Option(map.get("key2")) //None
 
 ---
 
+## Exercise: A Simple Calculator
+
+```scala
+def calculator(operand1: String, operator: String, operand2: String): String
+```
+
+```scala
+assert(calculator("1", "+", "1") == "The answer is 2!")
+assert(calculator("1", "/", "0") == "Error calculating 1 / 1")
+```
+
+---
+
 ## Either
 
 ```scala
 sealed abstract class Either[+A, +B] extends Product with Serializable
 final case class Left[+A, +B](value: A) extends Either[A, B] with Product with Serializable
-final case class Right[+A, +B](value: B) extends Either[A, B] with Product with Serializable
+final case class Right[+A, +B](value: B) extends Either[A, B] with Product with Serializable 
 ```
 
 [Either API Docs](https://www.scala-lang.org/api/current/scala/util/Either.html)
