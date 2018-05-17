@@ -18,5 +18,5 @@ Spark의 구현 언어이자 가장 효율적으로 Spark를 다룰 수 있는 �
   * Seq
 * [제 6일차: Collection Library(2/2)](/Class6.html)
   * Option, Map, Set, Range, RDD, ...
-* 제 7일차: Type Classes
+* [제 7일차: Type Classes](/Class7.html)
   * 상속이나 라이브러리 소스코드 접근없이 라이브러리에 새 기능 확장
